@@ -990,7 +990,7 @@ def ezville_loop(config):
                     # 동일 프레임(내용은 변경 없음)을 100ms 간격으로 10회 반복 전송해
                     # 인지 확률을 높임. 그 외 batch 동작은 기존과 동일하게 1회만 전송.
                     repeat_count = (
-                        10 if topics[2] in ("elevator-up", "elevator-down") else 1
+                        20 if topics[2] in ("elevator-up", "elevator-down") else 1
                     )
 
                     for repeat_idx in range(repeat_count):
